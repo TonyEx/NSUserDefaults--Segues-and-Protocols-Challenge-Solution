@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface TEASignInViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *usernameTexTField;
+@property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+
+- (IBAction)createAccountBarButtonItemPressed:(UIBarButtonItem *)sender;
+- (IBAction)loginButtonPressed:(UIButton *)sender;
 
 @end

@@ -14,7 +14,6 @@
 		C7F7E2431985AF0300B35B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F7E2421985AF0300B35B86 /* main.m */; };
 		C7F7E2471985AF0300B35B86 /* TEAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F7E2461985AF0300B35B86 /* TEAAppDelegate.m */; };
 		C7F7E24A1985AF0300B35B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7F7E2481985AF0300B35B86 /* Main.storyboard */; };
-		C7F7E24D1985AF0300B35B86 /* TEAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F7E24C1985AF0300B35B86 /* TEAViewController.m */; };
 		C7F7E24F1985AF0300B35B86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7F7E24E1985AF0300B35B86 /* Images.xcassets */; };
 		C7F7E2561985AF0300B35B86 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F7E2551985AF0300B35B86 /* XCTest.framework */; };
 		C7F7E2571985AF0300B35B86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7F7E2361985AF0300B35B86 /* Foundation.framework */; };
@@ -23,6 +22,7 @@
 		C7F7E2621985AF0400B35B86 /* NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F7E2611985AF0400B35B86 /* NSUserDefaults__Segues_and_Protocols_Challenge_SolutionTests.m */; };
 		C7F7E26D1985B0A000B35B86 /* TEASignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F7E26C1985B0A000B35B86 /* TEASignInViewController.m */; };
 		C7F7E2701985B0F500B35B86 /* TEACreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F7E26F1985B0F500B35B86 /* TEACreateAccountViewController.m */; };
+		C7F7E2731985B30500B35B86 /* TEAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F7E2721985B30500B35B86 /* TEAViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,6 @@
 		C7F7E2451985AF0300B35B86 /* TEAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEAAppDelegate.h; sourceTree = "<group>"; };
 		C7F7E2461985AF0300B35B86 /* TEAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEAAppDelegate.m; sourceTree = "<group>"; };
 		C7F7E2491985AF0300B35B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C7F7E24B1985AF0300B35B86 /* TEAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TEAViewController.h; sourceTree = "<group>"; };
-		C7F7E24C1985AF0300B35B86 /* TEAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TEAViewController.m; sourceTree = "<group>"; };
 		C7F7E24E1985AF0300B35B86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C7F7E2541985AF0300B35B86 /* NSUserDefaults, Segues and Protocols Challenge SolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSUserDefaults, Segues and Protocols Challenge SolutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F7E2551985AF0300B35B86 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -59,6 +57,8 @@
 		C7F7E26C1985B0A000B35B86 /* TEASignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEASignInViewController.m; sourceTree = "<group>"; };
 		C7F7E26E1985B0F500B35B86 /* TEACreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEACreateAccountViewController.h; sourceTree = "<group>"; };
 		C7F7E26F1985B0F500B35B86 /* TEACreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEACreateAccountViewController.m; sourceTree = "<group>"; };
+		C7F7E2711985B30500B35B86 /* TEAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEAViewController.h; sourceTree = "<group>"; };
+		C7F7E2721985B30500B35B86 /* TEAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TEAViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +121,12 @@
 				C7F7E2451985AF0300B35B86 /* TEAAppDelegate.h */,
 				C7F7E2461985AF0300B35B86 /* TEAAppDelegate.m */,
 				C7F7E2481985AF0300B35B86 /* Main.storyboard */,
+				C7F7E2711985B30500B35B86 /* TEAViewController.h */,
+				C7F7E2721985B30500B35B86 /* TEAViewController.m */,
 				C7F7E26E1985B0F500B35B86 /* TEACreateAccountViewController.h */,
 				C7F7E26F1985B0F500B35B86 /* TEACreateAccountViewController.m */,
 				C7F7E26B1985B0A000B35B86 /* TEASignInViewController.h */,
 				C7F7E26C1985B0A000B35B86 /* TEASignInViewController.m */,
-				C7F7E24B1985AF0300B35B86 /* TEAViewController.h */,
-				C7F7E24C1985AF0300B35B86 /* TEAViewController.m */,
 				C7F7E24E1985AF0300B35B86 /* Images.xcassets */,
 				C7F7E23D1985AF0300B35B86 /* Supporting Files */,
 			);
@@ -260,9 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7F7E24D1985AF0300B35B86 /* TEAViewController.m in Sources */,
 				C7F7E26D1985B0A000B35B86 /* TEASignInViewController.m in Sources */,
 				C7F7E2701985B0F500B35B86 /* TEACreateAccountViewController.m in Sources */,
+				C7F7E2731985B30500B35B86 /* TEAViewController.m in Sources */,
 				C7F7E2431985AF0300B35B86 /* main.m in Sources */,
 				C7F7E2471985AF0300B35B86 /* TEAAppDelegate.m in Sources */,
 			);
