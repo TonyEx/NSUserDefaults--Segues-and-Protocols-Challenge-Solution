@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TEACreateAccountViewController.h"
 
-@interface TEASignInViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UITextField *usernameTexTField;
+@interface TEASignInViewController : UIViewController <TEACreateAccountDelegage>
+
+@property (strong, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
 
 - (IBAction)createAccountBarButtonItemPressed:(UIBarButtonItem *)sender;

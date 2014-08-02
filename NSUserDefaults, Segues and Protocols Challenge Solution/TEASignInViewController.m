@@ -42,16 +42,7 @@
 }
 
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 
 - (IBAction)createAccountBarButtonItemPressed:(UIBarButtonItem *)sender {
@@ -60,7 +51,20 @@
 
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
-	[self performSegueWithIdentifier:@"toViewControllerSegue" sender:self];
+	
+	NSString *userName = [[NSUserDefaults standardUserDefaults] objectForKey:USER_NAME];
+	NSString *password = [[NSUserDefaults standardUserDefaults] objectForKey:USER_PASSWORD];
+	
+	if(([userName isEqualToString:self.usernameTextField.text]) && ([password isEqualToString:self.passwordTextField.text]))
+	{
+		[self performSegueWithIdentifier:@"toViewControllerSegue" sender:self];
+	}
+	else
+	{
+		UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Invalid login credentials" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+		
+		[alertView show];
+	}
 }
 
 
@@ -74,7 +78,7 @@
 			TEACreateAccountViewController *destVC;
 			destVC = segue.destinationViewController;
 			
-			
+			destVC.delegate = self;
 		}
 		
 		else if([segue.destinationViewController isKindOfClass:[TEAViewController class]])
@@ -87,6 +91,22 @@
 	}
 	
 }
+
+#pragma mark - TEACreateAccountDelegate Protocol Methods
+
+
+-(void) didCancel
+{
+	[self dismissViewControllerAnimated:true completion:nil];
+	
+}
+
+
+-(void) didCreateAccount
+{
+	[self dismissViewControllerAnimated:true completion:nil];
+}
+
 
 
 @end

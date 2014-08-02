@@ -165,7 +165,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="passwordTextField" destination="2Yn-Zu-Zjs" id="XFI-1N-fOU"/>
-                        <outlet property="usernameTexTField" destination="2eG-hq-SW0" id="Jit-7M-b5I"/>
+                        <outlet property="usernameTextField" destination="2eG-hq-SW0" id="uVN-tr-QcP"/>
                         <segue destination="Efm-LX-JAL" kind="modal" identifier="toCreateAccountViewControllerSegue" id="ZtZ-t7-cRr"/>
                         <segue destination="Thv-za-B4V" kind="modal" identifier="toViewControllerSegue" id="6M2-Xk-7MI"/>
                     </connections>

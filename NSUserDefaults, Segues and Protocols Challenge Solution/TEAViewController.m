@@ -7,6 +7,7 @@
 //
 
 #import "TEAViewController.h"
+#import "TEACreateAccountViewController.h"
 
 @interface TEAViewController ()
 
@@ -23,17 +24,24 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+	
+	self.usernameLabel.text = [[NSUserDefaults standardUserDefaults] objectForKey:USER_NAME];
+	self.passwordLabel.text = [[NSUserDefaults standardUserDefaults] objectForKey:USER_PASSWORD];
+	
 }
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation

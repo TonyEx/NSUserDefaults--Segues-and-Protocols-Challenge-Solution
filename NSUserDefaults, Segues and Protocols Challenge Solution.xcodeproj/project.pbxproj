@@ -121,12 +121,12 @@
 				C7F7E2451985AF0300B35B86 /* TEAAppDelegate.h */,
 				C7F7E2461985AF0300B35B86 /* TEAAppDelegate.m */,
 				C7F7E2481985AF0300B35B86 /* Main.storyboard */,
-				C7F7E2711985B30500B35B86 /* TEAViewController.h */,
-				C7F7E2721985B30500B35B86 /* TEAViewController.m */,
-				C7F7E26E1985B0F500B35B86 /* TEACreateAccountViewController.h */,
-				C7F7E26F1985B0F500B35B86 /* TEACreateAccountViewController.m */,
 				C7F7E26B1985B0A000B35B86 /* TEASignInViewController.h */,
 				C7F7E26C1985B0A000B35B86 /* TEASignInViewController.m */,
+				C7F7E26E1985B0F500B35B86 /* TEACreateAccountViewController.h */,
+				C7F7E26F1985B0F500B35B86 /* TEACreateAccountViewController.m */,
+				C7F7E2711985B30500B35B86 /* TEAViewController.h */,
+				C7F7E2721985B30500B35B86 /* TEAViewController.m */,
 				C7F7E24E1985AF0300B35B86 /* Images.xcassets */,
 				C7F7E23D1985AF0300B35B86 /* Supporting Files */,
 			);
@@ -469,6 +469,7 @@
 				C7F7E2671985AF0400B35B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7F7E2681985AF0400B35B86 /* Build configuration list for PBXNativeTarget "NSUserDefaults, Segues and Protocols Challenge SolutionTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +478,7 @@
 				C7F7E26A1985AF0400B35B86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
